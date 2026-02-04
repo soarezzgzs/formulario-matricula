@@ -1,7 +1,7 @@
 #app {
     display: grid;
     grid-template-columns: 51.25% 48.75%;
-
+    grid-template-areas: "main aside";
     height: 100vh;
     overflow: hidden;
 }
@@ -9,6 +9,7 @@
 main {
     overflow: auto;
     padding: 4rem;
+    grid-area: main;
 
     & .main-container{
         max-width: 33rem;
@@ -31,6 +32,7 @@ main {
 aside {
     background-color: var(--surface-secondary);
     padding: 4rem;
+    grid-area: aside;
 
     & .aside-container {
         max-width: 31rem;
@@ -48,5 +50,50 @@ aside {
         & span {
             color: var(--text-highlight);
         }
+    }
+}
+
+@media (width < 80em) {
+    #app {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+        "aside"
+         "main";
+
+        height: auto;
+        overflow: visible;
+        max-width: 360px;
+        width: 320px;
+    }
+    body {
+        overflow: auto;
+    }
+    main {
+        padding: 1rem;
+        overflow: visible;
+        max-width: 100%;
+
+        & .main-container {
+            max-width: 360px;
+            width: 360px;
+        }
+    }
+    input,
+    textarea,
+    select {
+        max-width: 100%;
+    }
+    .dropzone {
+    max-width: 100%;
+    overflow: hidden;
+    }   
+    .dropzone svg {
+        max-width: 100%;
+    }
+
+    aside {
+        padding: 2rem;
+
     }
 }
