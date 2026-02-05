@@ -54,6 +54,12 @@ aside {
 }
 
 @media (width < 80em) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     #app {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
@@ -68,15 +74,18 @@ aside {
     }
     body {
         overflow: auto;
+        overflow-x: hidden;
+        margin: 0;
     }
     main {
-        padding: 1rem;
         overflow: visible;
+        overflow-x: hidden;
         max-width: 100%;
 
         & .main-container {
             max-width: 360px;
             width: 360px;
+            margin: 0;
         }
     }
     input,
