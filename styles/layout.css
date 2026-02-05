@@ -83,7 +83,8 @@ aside {
         overflow-x: hidden;
         max-width: 380px;
         padding-inline: 5px;
-
+        padding-block: 64px;
+        
         & .main-container {
             width: 100%;
         }
