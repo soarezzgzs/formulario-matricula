@@ -70,11 +70,13 @@ aside {
         height: auto;
         overflow: visible;
         width: 100%;
+        margin: auto;
+
     }
     body {
         overflow: auto;
         overflow-x: hidden;
-        margin: 0;
+        margin: auto;
     }
     main {
         overflow: visible;
@@ -84,7 +86,7 @@ aside {
         & .main-container {
             max-width: 360px;
             width: 360px;
-            margin: 0;
+            margin: auto;
         }
     }
     input,
