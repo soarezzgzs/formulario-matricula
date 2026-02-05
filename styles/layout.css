@@ -69,8 +69,7 @@ aside {
 
         height: auto;
         overflow: visible;
-        max-width: 360px;
-        width: 320px;
+        width: 100%;
     }
     body {
         overflow: auto;
