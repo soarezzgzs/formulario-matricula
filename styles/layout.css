@@ -81,12 +81,10 @@ aside {
     main {
         overflow: visible;
         overflow-x: hidden;
-        max-width: 100%;
+        max-width: 380px;
 
         & .main-container {
-            max-width: 360px;
-            width: 360px;
-            margin: auto;
+            width: 100%;
         }
     }
     input,
